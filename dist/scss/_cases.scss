@@ -1,0 +1,13 @@
+#case > div .img-case{ 
+    @include transition-ease;
+  
+    &:hover {
+      opacity: 0.8;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+      transform: scale(0.98);
+    }
+  }
+
+#case .img-case-body:hover {
+   @include transform-105;
+}

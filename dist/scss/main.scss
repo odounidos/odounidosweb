@@ -1,0 +1,91 @@
+@import '../node_modules/bootstrap/scss/bootstrap.scss';
+@import 'config';
+@import 'home';
+@import 'about';
+@import 'services';
+@import 'blog';
+@import 'cases';
+@import 'responsive';
+
+
+/*-- Body Reset --*/
+body {
+    position: relative;
+    margin: 0;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 1.18rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: $my_text_dark;
+    background-color: #fff;
+    overflow-x: hidden;
+    height: 100%;  
+    -webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  }
+
+/* CUSTOMIZE THE TOP-BAR
+-------------------------------------------------- */  
+#top-bar {
+    a {
+        @include transition-ease;        
+        color: $my_text_light;
+    }  
+    
+    a:hover {
+        color: $my_white;
+        @include transform-105;
+    }
+}
+
+#main-navbar {
+    letter-spacing: .1rem;
+    font-weight: 500;
+    background-color: $my_light;
+}
+
+
+/* CUSTOMIZE THE MODAL 
+------------------------------------------------- */
+.form-validation {
+    position: relative;
+}
+
+.form-validation {
+    i {
+        visibility: hidden;
+        position: absolute;
+        top: 50px;
+        right: 10px;
+    }
+
+    small {
+        visibility: hidden;
+        position: absolute;
+        top: 80px;
+        left: 0;
+    }    
+}
+
+.form-validation.success input {
+    border-color: $my_success;
+}
+
+.form-validation.success i.fa-check-circle {
+    visibility: visible;
+    color: $my_success;
+}
+
+.form-validation.error input {
+    border-color: $my_error;
+}
+
+.form-validation.error i.fa-exclamation-circle {
+    visibility: visible;
+    color: $my_error;
+}
+
+.form-validation.error small {
+    visibility: visible;
+    color: $my_error;
+}

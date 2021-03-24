@@ -1,0 +1,42 @@
+@include media-lg {
+    #navbarNavDropdown {
+        text-align: center;        
+    }
+
+    #top-btn {
+        display: none;
+    }
+    
+    .carousel-item {
+        height: 42rem;
+      }
+
+    #about {
+        text-align: center;      
+    }
+
+    #services {
+        .accordion-item {
+            margin-bottom: 1rem !important;
+        }     
+    }
+}
+
+@include media-xl {
+    #top-bar {
+        display: none;
+    }
+
+    #top-btn {
+        padding: .25rem .5rem;
+        font-size: .875rem;
+        border-radius: .2rem;
+    }
+}
+
+@include media-xxl {
+    .top-social-links {
+        display: none;
+    }    
+}
+
