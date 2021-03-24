@@ -1,0 +1,71 @@
+//Variables
+$my_primary: #24a6df;
+$my_secondary: #64caea;
+$my_light:#e3f2fd;
+$my_text_dark: #333;
+$my_text_light: #e7e4ec;
+$my_white: #fff;
+$my_success: #2ecc71;
+$my_error: #e74c3c;
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.gradient {
+    background: linear-gradient(
+    135deg,
+    rgba(100, 202, 234, 1) 0%,
+    rgba(36, 166, 223, 1) 100%
+  );
+ }
+
+@mixin transition-ease {
+    transition: all 0.5s ease-in-out;
+}
+
+@mixin transform-105 {
+    transition: all 0.5s ease-in-out;
+    transform: scale(1.05);
+}
+
+@function set-text-color($color) {
+    @if (lightness($color) > 40%) {
+        @return #333;
+    } @else {
+        @return #fff;
+    }
+}
+
+@mixin media-sm {
+    @media screen and (max-width: 576px) {
+        @content;
+    }
+}
+
+@mixin media-md {
+    @media screen and (max-width: 768px) {
+        @content;
+    }
+}
+
+@mixin media-lg {
+    @media screen and (max-width: 992px) {
+        @content;
+    }
+}
+
+
+@mixin media-xl {
+    @media screen and (max-width: 1200px) {
+        @content;
+    }
+}
+
+@mixin media-xxl {
+    @media screen and (max-width: 1500px) {
+        @content;
+    }
+}
