@@ -1,9 +1,7 @@
-#services > div .col-md-4{ 
-  @include transition-ease;
+#services > div img{ 
 
   &:hover {
     opacity: 0.9;
-    transform: scale(0.98);
   }
 }
 

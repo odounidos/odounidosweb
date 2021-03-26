@@ -10201,13 +10201,8 @@ fieldset:disabled .btn {
 }
 
 /* rtl:end:ignore */
-#services > div .col-md-4 {
-  transition: all 0.5s ease-in-out;
-}
-
-#services > div .col-md-4:hover {
+#services > div img:hover {
   opacity: 0.9;
-  transform: scale(0.98);
 }
 
 #blog > div img {
