@@ -26,6 +26,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap"
         rel="stylesheet">
+
+    <!-- AOS Animation -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 
 <body data-bs-spy="scroll" data-bs-target="#main-navbar" data-bs-offset="20">
@@ -338,7 +341,7 @@
     </section>
 
     <section id="about" class="about gradient">
-        <div class="caption col-12 text-center">
+        <div class="caption col-12 text-center" data-aos="flip-down">
             <h2 class="text-dark">Nosotros</h2>
 
             <div class="border-top border-secondary w-25 mx-auto my-2"></div>
@@ -347,19 +350,23 @@
         <div class="container">
             <div class="row align-items-center justify-content-center">
                 <div class="col-lg-6">
-                    <h3 class="mt-3">Listo Para Sonreir? Estaremos Esperando Para Servirte</h3>
+                    <div data-aos="flip-up">
+                        <h3 class="mt-3">Listo Para Sonreir? Estaremos Esperando Para Servirte</h3>
 
-                    <p>
-                        Porque tu hijo(a) merece ser tratado por nosotros, especialistas en odontología infantil.
-                    </p>
+                        <p>
+                            Porque tu hijo(a) merece ser tratado por nosotros, especialistas en odontología infantil.
+                        </p>
+                    </div>
 
                     <a type="button" class="btn btn-outline-primary btn-md me-3" target="_blank"
-                        href="https://www.youtube.com/channel/UCx5GoMbno-ImF4qF1olHFmA">Tips</a>
+                        href="https://www.youtube.com/channel/UCx5GoMbno-ImF4qF1olHFmA"
+                        data-aos="zoom-out-right">Tips</a>
 
-                    <a type="button" class="btn btn-outline-success btn-md" href="#blog">Blog</a>
+                    <a type="button" class="btn btn-outline-success btn-md" href="#blog"
+                        data-aos="zoom-out-left">Blog</a>
                 </div>
 
-                <div class="col-lg-6 pt-5">
+                <div class="col-lg-6 pt-5" data-aos="fade-left">
                     <img class="img-fluid" src="img/about-1.jpg" alt="About us image"
                         style="border-radius: 4px; opacity: 0.9;" />
                 </div>
@@ -378,7 +385,7 @@
         <div class="container marketing">
             <!-- Three columns of text below the carousel -->
             <div class="row">
-                <div class="col-lg-4">
+                <div class="col-lg-4" data-aos="flip-left">
                     <img class="bd-placeholder-img rounded-circle" width="180" height="180" src="img/mission-1.jpg"
                         alt="">
 
@@ -395,7 +402,7 @@
 
                 </div><!-- /.col-lg-4 -->
 
-                <div class="col-lg-4">
+                <div class="col-lg-4" data-aos="fade-up">
                     <img class="bd-placeholder-img rounded-circle" width="180" height="180" src="img/vision-1.jpg"
                         alt="">
 
@@ -407,7 +414,7 @@
                     </p>
                 </div><!-- /.col-lg-4 -->
 
-                <div class="col-lg-4">
+                <div class="col-lg-4" data-aos="flip-right">
                     <img class="bd-placeholder-img rounded-circle" width="180" height="180" src="img/objective-1.jpg"
                         alt="">
 
@@ -436,7 +443,7 @@
             </path>
         </svg>
 
-        <div class="caption col-12 text-center">
+        <div class="caption col-12 text-center" data-aos="flip-down">
             <h2 class="text-dark">Servicios</h2>
 
             <div class="border-top border-secondary w-25 mx-auto my-2"></div>
@@ -446,7 +453,7 @@
             <div class="row row-cols-1 row-cols-md-3 g-4">
                 <div class="col-md-4">
                     <div class="accordion accordion-flush" id="accordionFlushService-1-3">
-                        <div class="accordion-item mb-5">
+                        <div class="accordion-item mb-5" data-aos="flip-left">
                             <h2 class="accordion-header" id="flush-heading-1">
                                 <img src="img/services/service-1.jpg" class="card-img-top" alt="...">
 
@@ -474,7 +481,7 @@
                             </div>
                         </div>
 
-                        <div class="accordion-item mb-5">
+                        <div class="accordion-item mb-5" data-aos="zoom-in-left">
                             <h2 class="accordion-header" id="flush-heading-2">
                                 <img src="img/services/service-2.jpg" class="card-img-top" alt="...">
 
@@ -500,7 +507,7 @@
                             </div>
                         </div>
 
-                        <div class="accordion-item mb-5">
+                        <div class="accordion-item mb-5" data-aos="zoom-in-right">
                             <h2 class="accordion-header" id="flush-heading-3">
                                 <img src="img/services/service-3.jpg" class="card-img-top" alt="...">
 
@@ -526,7 +533,7 @@
 
                 <div class="col-md-4">
                     <div class="accordion accordion-flush" id="accordionFlushService-4-6">
-                        <div class="accordion-item mb-5">
+                        <div class="accordion-item mb-5" data-aos="zoom-in">
                             <h2 class="accordion-header" id="flush-heading-4">
                                 <img src="img/services/service-4.jpg" class="card-img-top" alt="...">
 
@@ -550,7 +557,7 @@
                             </div>
                         </div>
 
-                        <div class="accordion-item mb-5">
+                        <div class="accordion-item mb-5" data-aos="zoom-in-up">
                             <h2 class="accordion-header" id="flush-heading-5">
                                 <img src="img/services/service-5.jpg" class="card-img-top" alt="...">
 
@@ -575,7 +582,7 @@
                             </div>
                         </div>
 
-                        <div class="accordion-item mb-5">
+                        <div class="accordion-item mb-5" data-aos="zoom-in-down">
                             <h2 class="accordion-header" id="flush-heading-6">
                                 <img src="img/services/service-6.jpg" class="card-img-top" alt="...">
 
@@ -603,7 +610,7 @@
 
                 <div class="col-md-4">
                     <div class="accordion accordion-flush" id="accordionFlushService-7-9">
-                        <div class="accordion-item mb-5">
+                        <div class="accordion-item mb-5" data-aos="flip-right">
                             <h2 class="accordion-header" id="flush-heading-7">
                                 <img src="img/services/service-7.jpg" class="card-img-top" alt="...">
 
@@ -627,7 +634,7 @@
                             </div>
                         </div>
 
-                        <div class="accordion-item mb-5">
+                        <div class="accordion-item mb-5" data-aos="zoom-in-right">
                             <h2 class="accordion-header" id="flush-heading-8">
                                 <img src="img/services/service-8.jpg" class="card-img-top" alt="...">
 
@@ -650,7 +657,7 @@
                             </div>
                         </div>
 
-                        <div class="accordion-item mb-5">
+                        <div class="accordion-item mb-5" data-aos="zoom-in-left">
                             <h2 class="accordion-header" id="flush-heading-9">
                                 <img src="img/services/service-9.jpg" class="card-img-top" alt="...">
 
@@ -690,7 +697,7 @@
     </section>
 
     <section id="blog">
-        <div class="caption col-12 text-center">
+        <div class="caption col-12 text-center" data-aos="flip-down">
             <h2 class="text-dark">PUBLICACIONES</h2>
 
             <div class="border-top border-secondary w-25 mx-auto my-2"></div>
@@ -702,99 +709,105 @@
 
                 <div class="col-md-4">
 
-                    <img src="img/posts/blog-1.jpg" alt="" class="img-fluid mb-3" />
+                    <div data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="1800">
+                        <img src="img/posts/blog-1.jpg" alt="" class="img-fluid mb-3" />
 
 
-                    <h4>IMPORTANCIA DE TRATAR A MI HIJO-A CON UN ESPECIALISTA EN
-                        ODONTOPEDIATRIA</h4>
-                    <p>Marzo 20, 2021 por <a href="#">Dra. Valdez</a></p>
+                        <h4>IMPORTANCIA DE TRATAR A MI HIJO-A CON UN ESPECIALISTA EN
+                            ODONTOPEDIATRIA</h4>
+                        <p>Marzo 20, 2021 por <a href="#">Dra. Valdez</a></p>
 
-                    <hr>
-                    <p>
-                        Los odontopediatra somos los especialistas de la odontología que nos dedicamos a la
-                        prevención, diagnóstico y tratamiento de las enfermedades y trastornos bucodentales en
-                        los infantes desde su nacimiento hasta los 14-18 años y, de las personas con habilidades
-                        diferentes de cualquier edad.
-                    </p>
+                        <hr>
+                        <p>
+                            Los odontopediatra somos los especialistas de la odontología que nos dedicamos a la
+                            prevención, diagnóstico y tratamiento de las enfermedades y trastornos bucodentales en
+                            los infantes desde su nacimiento hasta los 14-18 años y, de las personas con habilidades
+                            diferentes de cualquier edad.
+                        </p>
 
-                    <a href="blog-1.html" type="button" class="btn btn-outline-success mb-5">Continuar leyendo..</a>
+                        <a href="blog-1.html" type="button" class="btn btn-outline-success mb-5">Continuar leyendo..</a>
+                    </div>
 
+                    <div data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
 
-                    <img src="img/posts/blog-3.jpg" alt="" class="img-fluid mb-3" />
+                        <img src="img/posts/blog-3.jpg" alt="" class="img-fluid mb-3" />
 
-                    <h4>HIGIENE BUCODENTAL EN NINOS</h4>
+                        <h4>HIGIENE BUCODENTAL EN NINOS</h4>
 
-                    <p>Marzo 8, 2021 por <a href="#">Dra. Valdez</a></p>
+                        <p>Marzo 8, 2021 por <a href="#">Dra. Valdez</a></p>
 
-                    <hr>
+                        <hr>
 
-                    <p>
-                        La higiene es muy importante en los seres humanos, sabemos que por la higiene inicia la
-                        salud de manera integral en nuestro cuerpo. La cavidad oral requiere de cuidados
-                        especiales por parte de los padres desde el nacimiento.
-                    </p>
+                        <p>
+                            La higiene es muy importante en los seres humanos, sabemos que por la higiene inicia la
+                            salud de manera integral en nuestro cuerpo. La cavidad oral requiere de cuidados
+                            especiales por parte de los padres desde el nacimiento.
+                        </p>
 
-                    <a href="blog-3.html" type="button" class="btn btn-outline-success mb-5">Continuar leyendo..</a>
+                        <a href="blog-3.html" type="button" class="btn btn-outline-success mb-5">Continuar leyendo..</a>
+                    </div>
                 </div>
 
                 <div class="col-md-5">
-                    <img src="img/posts/blog-2.jpg" alt="" class="img-fluid mb-3" />
+                    <div data-aos="flip-right" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
+                        <img src="img/posts/blog-2.jpg" alt="" class="img-fluid mb-3" />
 
-                    <h4>DIETA Y SALUD BUCODENTAL INFANTIL</h4>
+                        <h4>DIETA Y SALUD BUCODENTAL INFANTIL</h4>
 
-                    <p>Marzo 10, 2021 por <a href="#">Dra. Valdez</a></p>
+                        <p>Marzo 10, 2021 por <a href="#">Dra. Valdez</a></p>
 
-                    <hr>
+                        <hr>
 
-                    <p>
-                        Además de una correcta higiene la salud bucal está íntimamente relacionada con el tipo de
-                        alimentos que ingiere el infante. Dentro de los alimentos más dañinos no solo por
-                        estimular la producción de caries dental sino también de obesidad, diabetes y hasta
-                        cáncer se encuentra el azúcar o sacarosa, por eso organismos internacionales recomiendan
-                        la NO ingesta de azúcar en niños hasta los 2 años.
-                    </p>
+                        <p>
+                            Además de una correcta higiene la salud bucal está íntimamente relacionada con el tipo de
+                            alimentos que ingiere el infante. Dentro de los alimentos más dañinos no solo por
+                            estimular la producción de caries dental sino también de obesidad, diabetes y hasta
+                            cáncer se encuentra el azúcar o sacarosa, por eso organismos internacionales recomiendan
+                            la NO ingesta de azúcar en niños hasta los 2 años.
+                        </p>
 
-                    <a href="blog-2.html" type="button" class="btn btn-outline-success mb-5">Continuar leyendo..</a>
+                        <a href="blog-2.html" type="button" class="btn btn-outline-success mb-5">Continuar leyendo..</a>
+                    </div>
                 </div>
 
                 <div class="col-md-3">
-                    <div class="p-4 mb-3 bg-light rounded">
-                        <h4>Acerca de mi..</h4>
+                    <div class="p-4 mb-3 bg-light rounded" data-aos="fade-down" data-aos-easing="linear"
+                        data-aos-duration="1500">
 
-                        <p class="mb-0">Saw you downtown singing the Blues. Watch you circle the drain. Why don't
-                            you
-                            let me stop by? Heavy is the head that <em>wears the crown</em>. Yes, we make angels
-                            cry,
-                            raining down on earth from up above.</p>
+                        <h4>Acerca..</h4>
+
+                        <p class="mb-0">Odontopediatría realizada con pasión al alcance de los más inocentes y
+                            vulnerables: la clase infantil, para crear juntos una generación de dominicanos libres de
+                            caries dental.</p>
                     </div>
 
-                    <div class="p-4 mb-3 bg-light rounded">
+                    <div class="p-4 mb-3 bg-light rounded" data-aos="fade-up" data-aos-duration="3000">
                         <h4>Categorias</h4>
 
                         <div class="list-group">
-                            <a href="blogs.html"
-                                class="list-group-item list-group-item-action list-group-item-primary">Odontopediatria
+                            <a href="blogs.html" class="list-group-item list-group-item-action list-group-item-primary"
+                                data-aos="fade-left" data-aos-duration="2000">Odontopediatria
                                 General
                                 <span class="badge rounded-pill bg-primary">05</span></a>
 
-                            <a href="blog-2.html"
-                                class="list-group-item list-group-item-action list-group-item-primary">Dieta
+                            <a href="blog-2.html" class="list-group-item list-group-item-action list-group-item-primary"
+                                data-aos="fade-left" data-aos-duration="2300">Dieta
                                 y
                                 Salud Bucodental
                                 <span class="badge rounded-pill bg-primary">01</span></a>
 
-                            <a href="blog-3.html"
-                                class="list-group-item list-group-item-action list-group-item-primary">Higiene
+                            <a href="blog-3.html" class="list-group-item list-group-item-action list-group-item-primary"
+                                data-aos="fade-left" data-aos-duration="2600">Higiene
                                 Bucodental <span class="badge rounded-pill bg-primary">01</span></a>
 
 
-                            <a href="blog-4.html"
-                                class="list-group-item list-group-item-action list-group-item-primary">Primera
+                            <a href="blog-4.html" class="list-group-item list-group-item-action list-group-item-primary"
+                                data-aos="fade-left" data-aos-duration="2900">Primera
                                 Visita
                                 <span class="badge rounded-pill bg-primary">01</span></a>
 
-                            <a href="blog-5.html"
-                                class="list-group-item list-group-item-action list-group-item-primary">Dientes
+                            <a href="blog-5.html" class="list-group-item list-group-item-action list-group-item-primary"
+                                data-aos="fade-left" data-aos-duration="3200">Dientes
                                 de Leche
                                 <span class="badge rounded-pill bg-primary">01</span></a>
                         </div>
@@ -811,7 +824,7 @@
             </path>
         </svg>
 
-        <div class="caption col-12 text-center">
+        <div class="caption col-12 text-center" data-aos="flip-down">
             <h2 class="text-dark">CASOS CLINICOS</h2>
 
             <div class="border-top border-secondary w-25 mx-auto my-2"></div>
@@ -819,9 +832,9 @@
 
         <div class="container py-5">
             <div class="row row-cols-1 row-cols-md-3 g-4">
-                <div class="col">
+                <div class="col" data-aos="zoom-out-right" data-aos-duration="2000">
                     <div class="card h-100 text-dark bg-light">
-                        <a href="img/cases/caso7.jpg" class="card" target="_blank">
+                        <a href=" img/cases/caso7.jpg" class="card" target="_blank">
                             <img src="img/cases/caso7.jpg" class="card-img-top img-case-body" alt="image case #7">
                         </a>
 
@@ -835,7 +848,7 @@
                     </div>
                 </div>
 
-                <div class="col">
+                <div class="col" data-aos="zoom-out-up" data-aos-duration="3000">
                     <div class="card h-100 text-dark bg-light">
                         <a data-bs-toggle="collapse" href="#collapseExample-5" role="button" aria-expanded="false"
                             aria-controls="collapseExample-5">
@@ -872,9 +885,9 @@
                     </div>
                 </div>
 
-                <div class="col">
+                <div class="col" data-aos="zoom-out-left" data-aos-duration="2500">
                     <div class="card h-100 text-dark bg-light">
-                        <a href="img/cases/caso9.jpg" class="card" target="_blank">
+                        <a href=" img/cases/caso9.jpg" class="card" target="_blank">
                             <img src="img/cases/caso9.jpg" class="card-img-top img-case-body" alt="image case #9">
                         </a>
 
@@ -888,7 +901,7 @@
                     </div>
                 </div>
 
-                <div class="col">
+                <div class="col" data-aos="flip-right" data-aos-duration="2000">
                     <div class="card h-100 text-dark bg-light">
                         <a data-bs-toggle="collapse" href="#collapseExample-4" role="button" aria-expanded="false"
                             aria-controls="collapseExample-4">
@@ -938,7 +951,7 @@
                     </div>
                 </div>
 
-                <div class="col">
+                <div class="col" data-aos="flip-up" data-aos-duration="2500">
                     <div class="card h-100 text-dark bg-light">
                         <a href="img/cases/caso2.jpg" class="card" target="_blank">
                             <img src="img/cases/caso2.jpg" class="card-img-top img-case-body" alt="image case #2">
@@ -962,7 +975,7 @@
                     </div>
                 </div>
 
-                <div class="col">
+                <div class="col" data-aos="flip-left" data-aos-duration="3000">
                     <div class="card h-100 text-dark bg-light">
                         <div class="card embed-responsive embed-responsive-1by1">
                             <video controls>
@@ -991,7 +1004,7 @@
                     </div>
                 </div>
 
-                <div class="col">
+                <div class="col" data-aos="flip-right" data-aos-duration="2000">
                     <div class="card h-100 text-dark bg-light">
                         <a data-bs-toggle="collapse" href="#collapseExample-6" role="button" aria-expanded="false"
                             aria-controls="collapseExample-6">
@@ -1034,7 +1047,7 @@
                     </div>
                 </div>
 
-                <div class="col">
+                <div class="col" data-aos="flip-down" data-aos-duration="2500">
                     <div class="card h-100 text-dark bg-light">
                         <a data-bs-toggle="collapse" href="#collapseExample-12" role="button" aria-expanded="false"
                             aria-controls="collapseExample-12">
@@ -1074,7 +1087,7 @@
                     </div>
                 </div>
 
-                <div class="col">
+                <div class="col" data-aos="flip-left" data-aos-duration="3000">
                     <div class="card h-100 text-dark bg-light">
                         <a data-bs-toggle="collapse" href="#collapseExample-8" role="button" aria-expanded="false"
                             aria-controls="collapseExample-8">
@@ -1165,8 +1178,6 @@
     </footer>
     <!-- End Footer -->
 
-
-
     <!-- Custom JS -->
     <script src="js/main.js"></script>
 
@@ -1174,6 +1185,15 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
         crossorigin="anonymous"></script>
+
+    <!-- AOS Animation Javascripts-->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            easing: 'ease-out-back',
+            duration: 2000
+        });
+    </script>
 
     <!-- Send Email From Javascripts-->
     <script src="https://smtpjs.com/v3/smtp.js"></script>
@@ -1223,7 +1243,6 @@
             return true;
         }
     </script>
-
 
     <script>
         function sendEmail() {
