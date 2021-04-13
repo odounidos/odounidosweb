@@ -10148,6 +10148,11 @@ fieldset:disabled .btn {
   box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.1);
 }
 
+.bg-custom {
+  background-color: rgba(36, 166, 223, 0.4);
+  border-radius: .5rem;
+}
+
 /* Carousel base class */
 /* Since positioning the image, we need to help out the caption */
 .carousel-caption {
@@ -10155,9 +10160,19 @@ fieldset:disabled .btn {
   z-index: 1;
 }
 
+.carousel-caption h1, .carousel-caption .h1 {
+  font-size: 3.8rem;
+  text-shadow: 0.1rem 0.1rem 0.3rem black;
+}
+
+.carousel-caption h3, .carousel-caption .h3 {
+  font-size: 2.2rem;
+  text-shadow: 0.1rem 0.1rem 0.2rem black;
+}
+
 /* Declare heights because of positioning of img element */
 .carousel-item {
-  height: 48rem;
+  height: 42rem;
   background-color: #000;
   position: relative;
 }
@@ -10205,6 +10220,36 @@ fieldset:disabled .btn {
   opacity: 0.9;
 }
 
+/*--------------------------------------------------------------
+# Hero Section
+--------------------------------------------------------------*/
+#service-hero {
+  width: 100%;
+  height: 60vh;
+  background: url("../img/services-hero.jpg") center center;
+  background-size: cover;
+  position: relative;
+  padding: 0;
+}
+
+#service-hero:before {
+  content: "";
+  background: rgba(56, 64, 70, 0.7);
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+#service-hero .container {
+  z-index: 2;
+}
+
+#service-hero .container h1, #service-hero .container .h1, #service-hero .container h2, #service-hero .container .h2 {
+  text-shadow: 0.1rem 0.1rem 0.3rem black;
+}
+
 #blog > div img {
   transition: all 0.5s ease-in-out;
 }
@@ -10213,6 +10258,66 @@ fieldset:disabled .btn {
   opacity: 0.8;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   transform: scale(0.98);
+}
+
+/*--------------------------------------------------------------
+# Hero Section
+--------------------------------------------------------------*/
+#blog-hero {
+  width: 100%;
+  height: 60vh;
+  background: url("../img/blog-hero.jpg") center center;
+  background-size: cover;
+  position: relative;
+  padding: 0;
+}
+
+#blog-hero:before {
+  content: "";
+  background: rgba(56, 64, 70, 0.7);
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+#blog-hero .container {
+  z-index: 2;
+}
+
+#blog-hero .container h1, #blog-hero .container .h1, #blog-hero .container h2, #blog-hero .container .h2 {
+  text-shadow: 0.1rem 0.1rem 0.3rem black;
+}
+
+/*--------------------------------------------------------------
+# Hero Section
+--------------------------------------------------------------*/
+#contact-hero {
+  width: 100%;
+  height: 60vh;
+  background: url("../img/contact-hero.jpg") center center;
+  background-size: cover;
+  position: relative;
+  padding: 0;
+}
+
+#contact-hero:before {
+  content: "";
+  background: rgba(56, 64, 70, 0.7);
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+#contact-hero .container {
+  z-index: 2;
+}
+
+#contact-hero .container h1, #contact-hero .container .h1, #contact-hero .container h2, #contact-hero .container .h2 {
+  text-shadow: 0.1rem 0.1rem 0.3rem black;
 }
 
 #case > div .img-case {
@@ -10230,15 +10335,159 @@ fieldset:disabled .btn {
   transform: scale(1.05);
 }
 
-@media screen and (max-width: 992px) {
-  #navbarNavDropdown {
+/*--------------------------------------------------------------
+# Hero Section
+--------------------------------------------------------------*/
+#cases-hero {
+  width: 100%;
+  height: 60vh;
+  background: url("../img/cases-hero.jpg") center center;
+  background-size: cover;
+  position: relative;
+  padding: 0;
+}
+
+#cases-hero:before {
+  content: "";
+  background: rgba(56, 64, 70, 0.7);
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+#cases-hero .container {
+  z-index: 2;
+}
+
+#cases-hero .container h1, #cases-hero .container .h1, #cases-hero .container h2, #cases-hero .container .h2 {
+  text-shadow: 0.1rem 0.1rem 0.3rem black;
+}
+
+@media screen and (max-width: 575px) {
+  .dropdown-menu {
     text-align: center;
   }
-  #top-btn {
-    display: none;
+  .carousel-item {
+    height: 18rem;
+  }
+  #about {
+    padding-top: 2rem;
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 576px) {
+  .dropdown-menu {
+    text-align: center;
   }
   .carousel-item {
-    height: 42rem;
+    height: 22rem;
+  }
+  #about {
+    padding-top: 1.5rem;
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  #top-bar a {
+    padding: 6px;
+  }
+  .dropdown-menu {
+    text-align: center;
+  }
+  .carousel-item {
+    height: 35rem;
+  }
+  .carousel-caption {
+    bottom: 1rem;
+    z-index: 1;
+  }
+  .carousel-caption h1, .carousel-caption .h1 {
+    font-size: 2rem;
+    text-shadow: 0.1rem 0.1rem 0.2rem black;
+  }
+  .carousel-caption h3, .carousel-caption .h3 {
+    font-size: 1rem;
+    text-shadow: 0.1rem 0.1rem 0.1rem black;
+  }
+  #about {
+    padding-top: 2.5rem;
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  #top-bar a {
+    padding: 10px;
+  }
+  .dropdown-menu {
+    text-align: center;
+  }
+  .carousel-item {
+    height: 36rem;
+  }
+  .carousel-caption {
+    bottom: 3rem;
+    z-index: 1;
+  }
+  .carousel-caption h1, .carousel-caption .h1 {
+    font-size: 2.8rem;
+    text-shadow: 0.1rem 0.1rem 0.2rem black;
+  }
+  .carousel-caption h3, .carousel-caption .h3 {
+    font-size: 1.4rem;
+    text-shadow: 0.1rem 0.1rem 0.1rem black;
+  }
+  .carousel-caption .btn-custom {
+    margin: auto;
+    padding: 6px;
+  }
+  #navbarCollapse {
+    text-align: center;
+    font-size: 1.23rem;
+    padding: 1rem;
+  }
+  .dropdown-menu {
+    text-align: center;
+  }
+  #main-navbar {
+    background-color: #24a6df;
+  }
+  #main-navbar a {
+    color: #fff;
+  }
+  #top-btn {
+    margin-top: 1rem;
+    padding: 0.5rem 1rem;
+    font-size: 1.23rem;
+  }
+  #services .accordion-item {
+    margin-bottom: 1rem !important;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  #navbarCollapse {
+    text-align: left;
+    font-size: 1.1rem;
+    padding: .5rem;
+  }
+  .dropdown-menu {
+    text-align: left;
+  }
+  #main-navbar {
+    background-color: #24a6df;
+  }
+  #main-navbar a {
+    color: #fff;
+  }
+  #top-btn {
+    margin-top: 0.3rem;
+    padding: 0.2rem 0.5rem;
+    font-size: 1.1rem;
   }
   #about {
     text-align: center;
@@ -10248,20 +10497,9 @@ fieldset:disabled .btn {
   }
 }
 
-@media screen and (max-width: 1200px) {
-  #top-bar {
-    display: none;
-  }
-  #top-btn {
-    padding: .25rem .5rem;
-    font-size: .875rem;
-    border-radius: .2rem;
-  }
-}
-
-@media screen and (max-width: 1500px) {
-  .top-social-links {
-    display: none;
+@media screen and (min-width: 1400px) {
+  .carousel-item {
+    height: 43rem;
   }
 }
 
@@ -10294,10 +10532,48 @@ body {
   transform: scale(1.05);
 }
 
+.footer-links ul li a {
+  transition: all 0.5s ease-in-out;
+  color: #e7e4ec;
+}
+
+.footer-links ul li a:hover {
+  color: #fff;
+  font-weight: bold;
+  transition: all 0.5s ease-in-out;
+  transform: scale(1.05);
+}
+
+#news-bar a i,
+#footer-social-media a i {
+  transition: all 0.5s ease-in-out;
+  color: #e7e4ec;
+}
+
+#news-bar a:hover i,
+#footer-social-media a:hover i {
+  color: #fff;
+  transition: all 0.5s ease-in-out;
+  transform: scale(1.05);
+}
+
 #main-navbar {
   letter-spacing: .1rem;
   font-weight: 500;
-  background-color: #e3f2fd;
+  background-color: #fff;
+}
+
+#main-navbar a {
+  color: #24a6df;
+}
+
+#main-navbar a:hover {
+  color: #fff;
+  background-color: #24a6df;
+}
+
+.activo {
+  background-color: #24a6df;
 }
 
 /* CUSTOMIZE THE MODAL 
@@ -10341,4 +10617,37 @@ body {
 .form-validation.error small, .form-validation.error .small {
   visibility: visible;
   color: #e74c3c;
+}
+
+/*---------------------------------------------------------------
+# Section Background
+---------------------------------------------------------------*/
+.section-bg {
+  background-color: #f6f9fe;
+}
+
+.section-title h2, .section-title .h2 {
+  letter-spacing: 1px;
+  background: #e7f1fd;
+  display: inline-block;
+  text-transform: uppercase;
+  border-radius: 50px;
+}
+
+/*--------------------------------------------------------------
+# Back to top button
+--------------------------------------------------------------*/
+.back-to-top {
+  position: fixed;
+  visibility: hidden;
+  opacity: 0;
+  right: 12px;
+  bottom: 12px;
+  z-index: 996;
+  transition: all 0.4s;
+}
+
+.back-to-top.activado {
+  visibility: visible;
+  opacity: 1;
 }

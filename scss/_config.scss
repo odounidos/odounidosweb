@@ -39,33 +39,39 @@ $my_error: #e74c3c;
     }
 }
 
+@mixin media-xs {
+    @media screen and (max-width: 575px) {
+        @content;
+    }
+}
+
 @mixin media-sm {
-    @media screen and (max-width: 576px) {
+    @media screen and (min-width: 576px) {
         @content;
     }
 }
 
 @mixin media-md {
-    @media screen and (max-width: 768px) {
+    @media screen and (min-width: 768px) {
         @content;
     }
 }
 
 @mixin media-lg {
-    @media screen and (max-width: 992px) {
+    @media screen and (min-width: 992px) {
         @content;
     }
 }
 
 
 @mixin media-xl {
-    @media screen and (max-width: 1200px) {
+    @media screen and (min-width: 1200px) {
         @content;
     }
 }
 
 @mixin media-xxl {
-    @media screen and (max-width: 1500px) {
+    @media screen and (min-width: 1400px) {
         @content;
     }
 }

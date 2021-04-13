@@ -7,5 +7,33 @@
       transform: scale(0.98);
     }
   }
-  
-  
+
+/*--------------------------------------------------------------
+# Hero Section
+--------------------------------------------------------------*/
+#blog-hero {
+  width: 100%;
+  height: 60vh;
+  background: url("../img/blog-hero.jpg") center center;
+  background-size: cover;
+  position: relative;
+  padding: 0;
+}
+
+#blog-hero:before {
+  content: "";
+  background: rgba(56, 64, 70, 0.7);
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+#blog-hero .container {
+  z-index: 2;
+
+  h1, h2 {
+    text-shadow: .1rem .1rem .3rem rgba(0, 0, 0, 1);
+  }
+}
