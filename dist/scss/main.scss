@@ -4,7 +4,9 @@
 @import 'about';
 @import 'services';
 @import 'blog';
+@import 'contact';
 @import 'cases';
+@import 'footer';
 @import 'responsive';
 
 
@@ -38,10 +40,58 @@ body {
     }
 }
 
+.footer-links {
+    ul {
+        li {            
+            a {
+                @include transition-ease;        
+                color: $my_text_light;
+            }  
+            
+            a:hover {
+                color: $my_white;
+                font-weight: bold;
+                @include transform-105;                
+            }
+        }        
+    }    
+}
+
+#news-bar,
+#footer-social-media {
+    a {
+        i {
+            @include transition-ease;  
+            color: $my_text_light; 
+        }             
+    }  
+    
+    a:hover {
+        i {
+            color: $my_white;
+            @include transform-105;
+        }        
+    }
+}
+
+
 #main-navbar {
     letter-spacing: .1rem;
     font-weight: 500;
-    background-color: $my_light;
+    background-color: $my_white;
+    
+    a {
+        color: $my_primary;
+    }
+
+    a:hover {
+        color: $my_white;
+        background-color: $my_primary;
+    }
+}
+
+.activo {
+    background-color: $my_primary    
 }
 
 
@@ -89,3 +139,37 @@ body {
     visibility: visible;
     color: $my_error;
 }
+
+/*---------------------------------------------------------------
+# Section Background
+---------------------------------------------------------------*/
+.section-bg {
+    background-color: #f6f9fe;
+  }
+
+  .section-title h2 {
+    letter-spacing: 1px;
+    background: #e7f1fd;
+    display: inline-block;
+    text-transform: uppercase;
+    border-radius: 50px;
+  }
+  
+ /*--------------------------------------------------------------
+# Back to top button
+--------------------------------------------------------------*/
+.back-to-top {
+    position: fixed;
+    visibility: hidden;
+    opacity: 0;
+    right: 12px;
+    bottom: 12px;
+    z-index: 996;
+   
+    transition: all 0.4s;
+  }
+  
+  .back-to-top.activado {
+    visibility: visible;
+    opacity: 1;
+  }

@@ -4,16 +4,31 @@
     box-shadow: 0 1rem 1rem rgba(0, 0, 0, .1);
 }
 
+.bg-custom {
+  background-color: rgba(36, 166, 223, .4);
+  border-radius: .5rem;
+}
+
 /* Carousel base class */
   /* Since positioning the image, we need to help out the caption */
   .carousel-caption {
     bottom: 3rem;
     z-index: 1;
+
+    h1 {
+      font-size: 3.8rem;
+      text-shadow: .1rem .1rem .3rem rgba(0, 0, 0, 1);
+    }
+
+    h3 {
+      font-size: 2.2rem;
+      text-shadow: .1rem .1rem .2rem rgba(0, 0, 0, 1);
+    }
   }
   
   /* Declare heights because of positioning of img element */
   .carousel-item {
-    height: 48rem;
+    height: 42rem;
     background-color: #000;
     position: relative;
   }
