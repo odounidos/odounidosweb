@@ -10567,7 +10567,12 @@ body {
   color: #24a6df;
 }
 
-#main-navbar a:hover {
+#main-navbar .nav-link:hover {
+  color: #fff;
+  background-color: #24a6df;
+}
+
+#main-navbar .dropdown-item:hover {
   color: #fff;
   background-color: #24a6df;
 }

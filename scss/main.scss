@@ -84,7 +84,12 @@ body {
         color: $my_primary;
     }
 
-    a:hover {
+    .nav-link:hover {
+        color: $my_white;
+        background-color: $my_primary;
+    }
+
+    .dropdown-item:hover {
         color: $my_white;
         background-color: $my_primary;
     }
